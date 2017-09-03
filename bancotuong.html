@@ -1,0 +1,275 @@
+<html>
+
+<head>
+</head>
+<style>
+    .BanCoTuong {
+        width: 50%;
+        height: 400px;
+        border-collapse: collapse;
+    }
+
+    .abc {
+        border-width: 2px;
+        border-style: solid;
+        border-color: saddlebrown;
+        text-align: center;
+        background-color: saddlebrown;
+        font-size: 20px;
+        padding-right: -200px;
+    }
+
+    .du {
+        border-left-style: solid;
+        border-left-width: 2px;
+        color: black;
+        border-right-style: solid;
+        border-left-width: 2px;
+        border-top-style: solid;
+        border-top-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+    }
+
+    .DuongCheo {
+        border-left-style: solid;
+        border-left-width: 2px;
+        color: black;
+        border-right-style: solid;
+        border-left-width: 2px;
+        border-top-style: solid;
+        border-top-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+    }
+
+    .VuongGoc {
+        border-left-style: solid;
+        border-left-width: 2px;
+        color: black;
+        border-right-style: solid;
+        border-left-width: 2px;
+        border-top-style: solid;
+        border-top-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+    }
+
+    .ThuNghiem {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border-width: 1px;
+        border-color: brown;
+        border-style: solid;
+        border-radius: 50%;
+        text-align: center;
+        color: blue;
+        font-weight: bold;
+        font-size: 30px;
+        vertical-align: middle;
+        /* chi ap dung cho 1 dong */
+        line-height: 200px;
+        /* chieu cao dong */
+    }
+
+    .Xoay {
+        width: 100px;
+        height: 50px;
+        color: blue;
+        font-weight: bold;
+        font-size: 30px;
+        background-color: white;
+        /* xoay */
+        transform: rotate(180deg);
+    }
+
+    .ViDuRowColSpan {
+        width: 100%;
+    }
+
+    .ViDuRowColSpan td {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ViDuRowColSpan .ONhap {
+        text-align: center;
+        background-color: green;
+    }
+
+    .ThuNghiemSpan {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border-width: 1px;
+        border-color: brown;
+        border-style: solid;
+        border-radius: 50%;
+        text-align: center;
+        color: blue;
+        font-weight: bold;
+        font-size: 30px;
+        /* chi ap dung cho 1 dong */
+        vertical-align: middle;
+        /* chieu cao dong */
+        line-height: 200px;
+    }
+</style>
+
+<body>
+    <div class="ThuNghiem">Thu nghiem</div>
+    <div class="Xoay">123</div>
+
+    <table border=1 class="ViDuRowColSpan">
+        <tr>
+            <td></td>
+            <td colspan="3" rowspan="2" class="ONhap">
+                <span class="ThuNghiemSpan">Thu nghiem</span>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+        <tr>
+            <td class="abc"></td>
+            <td class="abc">1</td>
+            <td class="abc">2</td>
+            <td class="abc">3</td>
+            <td class="abc">4</td>
+            <td class="abc">5</td>
+            <td class="abc">6</td>
+            <td class="abc">7</td>
+            <td class="abc">8</td>
+            <td class="abc">9</td>
+        </tr>
+        <tr>
+            <td class="abc"></td>
+            <td class="du"></td>
+            <td class="du"></td>
+            <td class="du"></td>
+            <td class="DuongCheo"></td>
+            <td class="DuongCheo"></td>
+            <td class="du"></td>
+            <td class="du"></td>
+            <td class="du"></td>
+            <td class="abc"></td>
+        </tr>
+        <tr>
+            <td class="abc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="du"></td>
+            <td class="DuongCheo"></td>
+            <td class="DuongCheo"></td>
+            <td class="du"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="abc"></td>
+        </tr>
+        <tr>
+            <td class="abc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="abc"></td>
+        </tr>
+        <tr>
+            <td class="abc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="abc"></td>
+        </tr>
+        <tr>
+            <td class="abc"></td>
+            <td colspan="8"></td>
+            <td class="abc"></td>
+        </tr>
+        <tr>
+            <td class="abc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="abc"></td>
+        </tr>
+        <tr>
+            <td class="abc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="du"></td>
+            <td class="du"></td>
+            <td class="du"></td>
+            <td class="du"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="abc"></td>
+        </tr>
+        <tr>
+            <td class="abc"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="du"></td>
+            <td class="DuongCheo"></td>
+            <td class="DuongCheo"></td>
+            <td class="du"></td>
+            <td class="VuongGoc"></td>
+            <td class="VuongGoc"></td>
+            <td class="abc"></td>
+        </tr>
+        <tr>
+            <td class="abc"></td>
+            <td class="du"></td>
+            <td class="du"></td>
+            <td class="du"></td>
+            <td class="DuongCheo"></td>
+            <td class="DuongCheo"></td>
+            <td class="du"></td>
+            <td class="du"></td>
+            <td class="du"></td>
+            <td class="abc"></td>
+        </tr>
+        <tr>
+            <td class="abc"></td>
+            <td class="abc">1</td>
+            <td class="abc">2</td>
+            <td class="abc">3</td>
+            <td class="abc">4</td>
+            <td class="abc">5</td>
+            <td class="abc">6</td>
+            <td class="abc">7</td>
+            <td class="abc">8</td>
+            <td class="abc
+            ">9</td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,944 @@
+<html>
+
+<head>
+    <style>
+        .BanCoCaNgua {
+            height: 100%;
+            border-collapse: collapse;
+            border-color: green;
+            border-width: 3px;
+            border-style: solid;
+        }
+        
+         .BanCoCaNgua > tbody > tr > td {
+            height: 100%;
+            border-collapse: collapse;
+            border-color: black;
+            border-width: 3px;
+            border-style: solid;
+        }
+
+        .O1 {
+            width: 100%;
+            height: 100%;
+            border-width: 3px;
+            background-image: url("BanCoTiPhu/MayBay.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .O4 {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-weight: bold;
+            background-image: url("BanCoTiPhu/CauVong.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-size: 30px;
+            border-color: black;
+        }
+
+        .Top {
+            width: 100px;
+            height: 100%;
+            transform: rotate(180deg);
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .Top img {
+            width: 50px;
+        }
+
+        .Bottom {
+            width: 100px;
+            height: 100%;
+            text-align: center;
+            font-weight: bold;
+            border-collapse: collapse;
+        }
+
+        .Bottom img {
+            width: 50px;
+        }
+
+        .Left {
+            width: 100%;
+            height: 100px;
+            border-width: 3px;
+            font-weight: bold;
+            text-align: center;
+            border-collapse: collapse;
+            border-color: black;
+        }
+        .Right {
+            width: 100%;
+            height: 100px;
+            border-width: 3px;
+            font-weight: bold;
+            text-align: center;
+            border-collapse: collapse;
+            border-color: black;
+        }
+        .MauDo {
+            background-color: red;
+            border-style: solid;
+            border-width: 3px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .MauVang {
+            background-color: yellow;
+            border-style: solid;
+            border-width: 3px;
+        }
+
+        .XanhLa {
+            background-color: green;
+            border-style: solid;
+            border-width: 3px;
+        }
+
+        .XanhDuong {
+            background-color: blue;
+            border-style: solid;
+            border-width: 3px;
+        }
+
+        .XanhNhat {
+            background-color: steelblue;
+            border-style: solid;
+            border-width: 3px;
+        }
+
+        .MauHong {
+            background-color: orchid;
+            border-style: solid;
+            border-width: 3px;
+        }
+
+        .MauCam {
+            background-color: orange;
+            border-style: solid;
+            border-width: 3px;
+        }
+
+        .MauTim {
+            background-color: purple;
+            border-style: solid;
+            border-width: 3px;
+        }
+
+        .ThuNho1 {
+            width: 50px;
+        }
+
+        .CanhSat {
+            width: 100%;
+            height: 100%;
+            border-width: 3px;
+            border-collapse: collapse;
+        }
+
+        .CanhSat1 {
+            height: 120px; 
+            transform: rotate(-135deg);
+            padding-top:50px;
+        }
+
+        .MayBay {
+            transform: rotate(45deg);
+        }
+
+        .ThamTu {
+            border-width: 3px;
+            font-weight: bold;
+            width: 100%;
+            height: 150px;
+        }
+
+        .OGiua {
+            width: 100%;
+            height: 500px;
+            transform: rotate(-45deg);
+            padding-left: 70px;
+        }
+
+        .CoHoi {
+            font-weight: bold;
+            font-size: 50px;
+            text-align: center;
+            transform: rotate(180deg);
+            padding-top: 70px;
+        }
+
+        .CoTiPhu {
+            font-weight: bold;
+            font-size: 100px;
+            text-align: center;
+        }
+
+        .KhiVan {
+            font-weight: bold;
+            font-size: 50px;
+            text-align: center;
+            padding-top: 70px;
+        }
+
+        .XoayTrai {
+            transform: rotate(90deg);
+            padding-bottom:15px;
+            padding-top :20px;
+        }
+
+        .DauHoi {
+            width: 33px;
+        }
+
+        .XoayPhai {
+            transform: rotate(269deg);
+            padding-bottom:20px;
+            padding-top:10px;
+        }
+
+        img {
+            max-width: 150px;
+        }
+
+        .BenXe table {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .BenXe img {
+            width: 100px;
+            transform: rotate(90deg);
+        }
+
+        .BenXe div {
+            width: 100px;
+            transform: rotate(90deg);
+        }
+
+        .SanBay1 {
+            font-weight: bold;
+            transform: rotate(90deg);
+            margin-top: 30px;
+            margin-right: 100px;
+        }
+
+        .SanBay2 {
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+
+        .VoTu1 {
+            font-weight: bold;
+            transform: rotate(180deg);
+        }
+
+        .VoTu2 {
+            font-weight: bold;
+            padding-top:20px;
+            transform: rotate(-90deg);
+        }
+
+        .Nha {
+            height: 30px;
+        }
+
+        .Nha1 {
+            width: 30px;
+        }
+        .AoThuatGia{
+            transform: rotate(180deg);
+            padding-left: 350px;
+            padding-top:30px;
+        }
+        .AoThuatGia1{
+            padding-left: 350px;
+            padding-top: 30px;
+        }
+        .O3{
+            width: 100px;
+            transform: rotate(45deg);
+            padding: 10px;
+        }
+        .abc{
+            background-color: red;
+            padding:12px;
+        }
+        .A1{
+            padding-bottom: 15px;
+        }
+        .A2{
+            padding-bottom:5px;
+        }
+        .A3{
+            padding-top: 2px;
+        }
+        .A4{
+            padding-top:60px;
+        }
+        .A5{
+            padding-top:50px;
+        }
+        .A6{
+            padding-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="BanCoCaNgua" border="1">
+        <tr>
+            <td>
+                <table class="O1" border="0">
+                    <tr>
+                        <td></td>
+                        <td class="SanBay2">
+                            <div>Sân Bay</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="SanBay1">Sân Bay</div>
+                        </td>
+                        <td></td>
+                </table>
+            </td>
+            <td>
+                <table class="Top" border="0">
+                    <tr>
+                        <td class="MauDo Nha"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Đường Công Lý</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>220đ</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table border="0" class="Top">
+                    <tr>
+                        <td>
+                            <div>Cơ Hội</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="BanCoTiPhu/Dauhoi.png">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Top" border="0">
+                    <tr>
+                        <td class="MauDo Nha"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Đại lộ thống nhất</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>220đ</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Top" border="0">
+                    <tr>
+                        <td class="MauDo Nha"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Đại lộ cộng hòa</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>240đ</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table border="0" class="Top">
+                    <tr>
+                        <td>
+                            <div>Bến xe An Đông</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>200đ</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="BanCoTiPhu/oto.png" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Top" border="0">
+                    <tr>
+                        <td class="MauVang Nha"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Đại lộ Hồng Thập Tự</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>260đ</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Top" border="0">
+                    <tr>
+                        <td class="MauVang Nha"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Đại lộ Hai Bà Trưng</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>260d</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table border="0" class="Top">
+                    <tr>
+                        <td>
+                            <div>Công ty thủy cục</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="BanCoTiPhu/Voinuoc.png" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="A1">
+                            <div>150đ</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Top" border="0">
+                    <tr>
+                        <td class="MauVang Nha"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Xa lộ Biên Hòa</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>280đ</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table border="0" class="CanhSat">
+                    <tr>
+                        <td>
+                            <div class="VoTu1">Vô Tù</div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                         <img class="Canhsat1" src="BanCoTiPhu/Canhsat.png"/>
+                        </td>
+                        <td>
+                            <div class="VoTu2">Vô Tù</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="Left" border="0">
+                        <tr>
+                            <td class="XoayTrai">
+                                <div>200đ</div>
+                            </td>
+                            <td class="XoayTrai">
+                                <div>Bến</div>
+                            </div>Bạch Đằng</div>
+                            </td>
+                            <td class="MauCam Nha1"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td colspan="9" rowspan="9">
+                    <table border="0" class="OGiua">
+                        <tr>
+                            <td class="AoThuatGia">
+                                <img src="BanCoTiPhu/NhaAoThuat.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="CoHoi">
+                                <div>Cơ Hội</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="CoTiPhu">
+                                <div>Cờ Tỉ Phú</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="KhiVan">Khí Vận</td>
+                        </tr>
+                        <tr>
+                            <td class="AoThuatGia1">
+                                <img src="BanCoTiPhu/NhaAoThuat.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="Right" border="0">
+                        <tr>
+                            <td class="XanhLa Nha1"></td>
+                            <td class="XoayPhai">
+                                <div>Phan</div>
+                                    <div>Thanh Giản</div>
+                            </td>
+                            <td class="XoayPhai A3">
+                                <div>300đ</div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table border="0" class="Left">
+                        <tr>
+                            <td class="XoayTrai A2">
+                                <div>180đ</div>
+                            </td>
+                            <td class="XoayTrai">
+                                <div>Gia Long</div>
+                            </td>
+                            <td class="MauCam Nha1"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="Right" border="0">
+                        <tr>
+                            <td class="XanhLa Nha1"></td>
+                            <td class="XoayPhai">
+                                <div>Lê</div>
+                                <div>Văn Duyệt<div>
+                            </td>
+                            <td>
+                                <div class="XoayPhai">300đ</div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="Left" border="0">
+                        <tr>
+                            <td>
+                                <img class="XoayTrai ThuNho1" src="BanCoTiPhu/RuongVang.png" />
+                            </td>
+                            <td class="XoayTrai">
+                                <div>Khí Vận</div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="Right" border="0">
+                        <tr>
+                            <td class="XoayPhai">
+                                <div>Khí Vận</div>
+                            </td>
+                            <td>
+                                <img class="XoayPhai ThuNho1" src="BanCoTiPhu/RuongVang.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table class="Left" border="0">
+                        <tr>
+                            <td class="XoayTrai">
+                                <div>180đ</div>
+                            </td>
+                            <td class="XoayTrai">
+                                <div>Đại lộ</div>
+                                <div>Hùng Vương</div>
+                            </td>
+                            <td class="MauCam Nha1"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="Right" border="0">
+                        <tr>
+                            <td class="XanhLa Nha1"></td>
+                            <td class="XoayPhai">
+                                <div>Nguyễn</div>
+                                <div>Thái Học</div>
+                            </td>
+                            <td>
+                                <div class="XoayPhai">320đ</div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="Left" border="0">
+                        <tr>
+                            <td class="XoayTrai">
+                                <img class="ThuNho1" src="BanCoTiPhu/oto.png" />
+                            </td>
+                            <td class="XoayTrai">
+                                <div>200đ</div>
+                            </td>
+                            <td class="XoayTrai">
+                                <div>Bến xe lam</div>
+                                <div>chợ Lớn</div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="Right" border="0">
+                        <tr>
+                            <td class="XoayPhai">
+                                <div>Bếnxe</div>
+                                <div>Sài Gòn</div>
+                            </td>
+                            <td>
+                                <div class="XoayPhai">200đ</div>
+                            </td>
+                            <td class="XoayPhai">
+                                <img class="ThuNho1" src="BanCoTiPhu/oto.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tr>
+        <tr>
+            <td>
+                <table class="Left" border="0">
+                    <tr>
+                        <td class="XoayTrai A2">
+                            <div>160đ</div>
+                        </td>
+                        <td class="XoayTrai">
+                            <div>Lý</div>
+                                <div> Thái Tổ</div>
+                        </td>
+                        <td class="MauHong Nha1"></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Right" border="0">
+                    <tr>
+                        <td class="XoayPhai">
+                            <div>Cơ Hội</div>
+                        </td>
+                        <td class="XoayPhai">
+                            <img class="ThuNho1" src="BanCoTiPhu/Dauhoi.png"/>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="Left" border="0">
+                    <tr>
+                        <td class="XoayTrai A2">
+                            <div>140đ</div>
+                        </td>
+                        <td class="XoayTrai">
+                            <div>Trịnh</div>
+                            <div>Minh Thế</div>
+                        </td>
+                        <td class="MauHong Nha1"></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Right" border="0">
+                    <tr>
+                        <td class="XanhDuong Nha1"></td>
+                        <td class="XoayPhai">
+                            <div>Nha Trang</div>
+                        </td>
+                        <td class="XoayPhai">
+                            <div>350d</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="Left" border="0">
+                    <tr>
+                        <td class="XoayTrai">
+                            <div>150đ</div>
+                        </td>
+                        <td class="XoayTrai">
+                            <img class="ThuNho1" src="BanCoTiPhu/Bongden.png" />
+                        </td>
+                        <td class="XoayTrai">
+                            <div>Công Ty</div>
+                            <div>Điện Lực</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Right" border="0">
+                    <tr>
+                        <td class="XoayPhai">
+                            <div>Thuế</div>
+                            <div>lương bổng</div>
+                        </td>
+                        <td class="XoayPhai">
+                            <img class="ThuNho1" src="BanCoTiPhu/KimCuong.png" />
+                        </td>
+                        <td class="XoayPhai A3">
+                            <div>100đ</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="Left" border="0">
+                    <tr>
+                        <td class="XoayTrai">
+                            <div>140đ</div>
+                        </td>
+                        <td class="XoayTrai">
+                            <div>Phan</div>
+                            <div>Đình Phùng</div>
+                        </td>
+                        <td class="MauHong Nha1"></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Right" border="0">
+                    <tr>
+                        <td class="XanhDuong Nha1"></td>
+                        <td class="XoayPhai">
+                            <div>Cố Đô Huế</div>
+                        </td>
+                        <td class="XoayPhai">
+                            <div>400đ</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table border="0" class="ThamTu">
+                    <tr>
+                        <td class="XoayTrai">
+                            <div>ThămTù</div>
+                        </td>
+                        <td class="abc">
+                            <img class="O3" src="BanCoTiPhu/PhamNhan.jpg" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Thăm Tù</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Bottom">
+                    <tr>
+                        <td class="XanhNhat Nha"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Bến Chương Dương</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="A6">
+                            <div>120đ</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Bottom">
+                    <tr>
+                        <td class="XanhNhat Nha"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Tân Định</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="A4">
+                            <div>100đ</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Bottom">
+                    <tr>
+                        <td>
+                            <div>Cơ Hội</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="BanCoTiPhu/Dauhoi.png"/>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Bottom">
+                    <tr>
+                        <td class="XanhNhat Nha"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Thi Nghè</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="A4">
+                            <div>100đ </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Bottom">
+                    <tr>
+                        <td>Bến xe Lục Tỉnh</td>
+                    </tr>
+                    <tr>
+                        <td>200đ</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="BanCoTiPhu/oto.png" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Bottom">
+                    <tr>
+                        <td>Thuế lợi tức</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="BanCoTiPhu/DinhVi.png" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>200đ</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Bottom">
+                    <tr>
+                        <td class="MauTim Nha"></td>
+                    </tr>
+                    <tr>
+                        <td>Nhà bè Phú Xuân</td>
+                    </tr>
+                    <tr>
+                        <td class="A5">60đ</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Bottom">
+                    <tr>
+                        <td>Khí Vận</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="BanCoTiPhu/RuongVang.png" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="Bottom">
+                    <tr>
+                        <td class="MauTim Nha"></td>
+                    </tr>
+                    <tr>
+                        <td>Phú Lâm</td>
+                    </tr>
+                    <tr>
+                        <td class="A5">60đ</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table border="0" class="O4">
+                    <tr>
+                        <td>Trạm Khởi Hành</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
